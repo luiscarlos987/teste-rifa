@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^juapremios.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.juapremios.com$
+RewriteCond %{HTTP_URI} !public/
+RewriteRule (.*) /public/$1 [L]
